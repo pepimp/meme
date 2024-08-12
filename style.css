@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    background-color: rgba(0, 128, 0, 0.8); /* Dark Green background */
+    background-color: rgba(0, 100, 0, 0.8); /* Dark green */
     color: #fff;
     padding: 15px 0;
     position: sticky;
@@ -60,7 +60,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #00FF00; /* Bright Green hover color */
+    color: #00FF00; /* Bright green */
 }
 
 #hero {
@@ -69,7 +69,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 128, 0, 0.7); /* Dark Green overlay */
+    background: rgba(0, 100, 0, 0.7); /* Dark green overlay */
 }
 
 .hero-content {
@@ -77,9 +77,9 @@ header nav ul li a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 100, 0, 0.1); /* Light green tint */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); /* Green shadow */
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
 }
 
 .hero-content h2 {
@@ -96,7 +96,7 @@ header nav ul li a:hover {
 
 .btn {
     padding: 10px 20px;
-    background-color: #00FF00; /* Bright Green button */
+    background-color: #00FF00; /* Bright green */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -106,7 +106,7 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #008000; /* Dark Green hover color */
+    background-color: #006400; /* Darker green */
     transform: scale(1.05);
 }
 
@@ -119,20 +119,20 @@ main {
 
 section {
     margin-bottom: 40px;
-    background-color: rgba(0, 128, 0, 0.85); /* Dark Green section background */
+    background-color: rgba(0, 100, 0, 0.85); /* Dark green */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); /* Green shadow */
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
     transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
-    background-color: rgba(0, 128, 0, 0.95); /* Darker Green on hover */
+    background-color: rgba(0, 100, 0, 0.95); /* Darker green */
 }
 
 h2 {
-    color: #00FF00; /* Bright Green heading */
+    color: #00FF00; /* Bright green */
     font-family: 'Orbitron', sans-serif;
     margin-top: 0;
     font-size: 28px;
@@ -149,13 +149,13 @@ li {
 }
 
 a {
-    color: #00FF00; /* Bright Green links */
+    color: #00FF00; /* Bright green */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #008000; /* Dark Green on hover */
+    color: #006400; /* Darker green */
 }
 
 .center-image {
@@ -164,7 +164,7 @@ a:hover {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.3); /* Green shadow */
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
     transition: transform 0.3s ease;
 }
 
@@ -175,7 +175,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: rgba(0, 128, 0, 0.9); /* Dark Green footer */
+    background-color: rgba(0, 100, 0, 0.9); /* Dark green */
     color: #fff;
     width: 100%;
 }
