@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pepimp - Meme Culture</title>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pepimp.github.io/meme/">
+  <meta property="og:title" content="Pepimp - Meme Culture">
+  <meta property="og:description" content="Explore the humor and influence of Pepimp in the world of memes.">
+  <meta property="og:image" content="pepimp.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Additional styles for the mute button */
+    .mute-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #E07A5F;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .mute-button:hover {
+      background-color: #A64B00;
+      transform: scale(1.05);
+    }
+
+    /* Styles for the video grid */
+    .video-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .video-container {
+      flex: 1 1 48%;
+      max-width: 48%;
+    }
+
+    @media (max-width: 768px) {
+      .video-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+
+    /* Style for the motto */
+    .motto {
+      font-size: 18px;
+      font-weight: 600;
+      color: #E07A5F;
+      text-align: center;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Pepimp</h1>
+      <p class="motto">God Have Mercy Upon Us</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-to-buy">How to Buy</a></li>
+          <li><a href="#tokenomics">Tokenomics</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Pepimp</h2>
+        <p>Pepimp is the ultimate gangsta version of the iconic Pepe the Frog. We aim to bring Pepimp into the world of Web3, leveraging his popularity to create new and exciting opportunities.</p>
+        <img src="pepimp.png" alt="Image of Pepimp" class="center-image">
+      </div>
+    </section>
+
+    <section id="tokenomics">
+      <div class="container">
+        <h2>Tokenomics</h2>
+        <p>Pepimp is an interchain token available on multiple blockchain networks, including Base, BNB Chain, and Ethereum. This multi-chain support allows for canonical versions of the token across these blockchains, all sharing a single EVM address. This feature enhances accessibility and enables seamless transactions across platforms. Additional chains can be added based on community demand, ensuring Pepimp remains adaptable and user-focused.</p>
+      </div>
+    </section>
+
+    <section id="how-to-buy">
+      <div class="container">
+        <h2>How to Buy</h2>
+        <p>To become a part of the Pepimp meme culture, follow our guide on how to buy and engage with Pepimp-related content and tokens.</p>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="container">
+        <h2>Roadmap</h2>
+        <p>We don't have time for bullshit</p>
+        <ul>
+          <li><strong>Phase 1:</strong> Attract early adopters and true believers</li>
+          <li><strong>Phase 2:</strong> Launch massive marketing campaigns and secure listings</li>
+          <li><strong>Phase 3:</strong> Rise to the top 5 meme coins... or even claim the number one spot!</li>
+          <li><strong>Phase 4:</strong> Make Africa great again! unlock its full potential!</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="motto">God Have Mercy Upon Us</p>
+      <p>&copy; 2024 Pepimp - Meme Culture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMute(videoId) {
+      const iframe = document.getElementById(`pepimp-video-${videoId}`);
+      const button = document.querySelector(`#pepimp-video-${videoId} + .mute-button`);
+      const url = new URL(iframe.src);
+
+      // Toggle mute parameter
+      const isMuted = url.searchParams.get('mute') === '1';
+      url.searchParams.set('mute', isMuted ? '0' : '1');
+
+      // Update button text immediately
+      button.textContent = isMuted ? 'Mute Video' : 'Unmute Video';
+
+      // Reload the iframe with updated URL
+      iframe.src = url.toString();
+    }
+  </script>
+
+</body>
+
+</html>
