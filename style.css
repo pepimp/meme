@@ -1,139 +1,181 @@
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1a1a1a;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('wall.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-.styled-text {
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-  font-size: 22px;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 2px #FFFFFF,  /* Soft white shadow */
-               0 0 5px #000000;      /* Black outer glow for better readability */
-  padding: 10px 20px;
-  margin-bottom: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
-  background-color: #0d0d0d;
-  padding: 20px 0;
-  border-bottom: 2px solid #FFD700;
+    background-color: rgba(0, 100, 0, 0.8); /* Dark green */
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
-  font-family: 'Bangers', cursive;
-  color: #FFD700;
-  font-size: 40px;
-  margin: 0;
-  text-shadow: 
-    -2px -2px 0 #000,   /* Black shadow for border effect */
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
 }
 
-nav ul li a {
-  color: #FFFFFF;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-  font-size: 18px;
-  text-shadow: 1px 1px 2px #FFFFFF,  /* Soft white shadow */
-               0 0 5px #000000;      /* Black outer glow for better readability */
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #000000;
-  border-radius: 10px;
-  transition: color 0.3s ease;
+header nav ul li {
+    display: inline;
 }
 
-nav ul li a:hover {
-  color: #00FF00;
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
-.motto {
-  font-size: 28px;
-  font-weight: 700;
-  color: #FFD700;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 20px 0;
-  font-family: 'Bangers', cursive;
-  text-shadow:
-    -2px -2px 0 #000,
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+header nav ul li a:hover {
+    color: #00FF00; /* Bright green */
 }
 
-section h2 {
-  font-family: 'Bangers', cursive;
-  color: #FFD700;
-  font-size: 30px;
-  margin-bottom: 10px;
-  text-shadow:
-    -2px -2px 0 #000,   /* Black shadow for border effect */
-    2px -2px 0 #000,
-    -2px 2px 0 #000,
-    2px 2px 0 #000;
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 100, 0, 0.7); /* Dark green overlay */
 }
 
-.social-icons {
-  text-align: center;
-  margin-top: 20px;
+.hero-content {
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 100, 0, 0.1); /* Light green tint */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
 }
 
-.social-icons img {
-  width: 40px;
-  height: 40px;
-  margin: 0 10px;
-  vertical-align: middle;
+.hero-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #00FF00; /* Bright green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #006400; /* Darker green */
+    transform: scale(1.05);
 }
 
 main {
-  padding: 20px;
-  background-color: #262626;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
 }
 
-section p,
-section ul li {
-  font-size: 18px;
-  color: #cccccc;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-  background-color: #000000;
-  color: #FFFFFF;
-  text-shadow: 1px 1px 2px #FFFFFF,  /* Soft white shadow */
-               0 0 5px #000000;      /* Black outer glow for better readability */
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+section {
+    margin-bottom: 40px;
+    background-color: rgba(0, 100, 0, 0.85); /* Dark green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 100, 0, 0.95); /* Darker green */
+}
+
+h2 {
+    color: #00FF00; /* Bright green */
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+a {
+    color: #00FF00; /* Bright green */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #006400; /* Darker green */
+}
+
+.center-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 100, 0, 0.3); /* Green shadow */
+    transition: transform 0.3s ease;
+}
+
+.center-image:hover {
+    transform: scale(1.05);
 }
 
 footer {
-  background-color: #0d0d0d;
-  padding: 20px;
-  text-align: center;
-  border-top: 2px solid #FFD700;
-}
-
-footer p {
-  margin: 5px 0;
-  font-size: 14px;
-  color: #FFFFFF;
-  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-  text-shadow: 1px 1px 2px #FFFFFF,  /* Soft white shadow */
-               0 0 5px #000000;      /* Black outer glow for better readability */
-  background-color: #000000;
-  padding: 10px 20px;
-  border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 100, 0, 0.9); /* Dark green */
+    color: #fff;
+    width: 100%;
 }
