@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -27,6 +26,21 @@
       color: #ffffff;
       margin: 0;
       padding: 0;
+    }
+
+    .styled-text {
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0 #FF0000,
+                   -2px 2px 0 #FF0000,
+                   2px -2px 0 #FF0000,
+                   -2px -2px 0 #FF0000;
+      background-color: #000000;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     header {
@@ -101,19 +115,20 @@
       margin-bottom: 10px;
     }
 
-    section p {
+    section p,
+    section ul li {
       font-size: 18px;
       color: #cccccc;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    ul li {
-      font-size: 18px;
-      margin-bottom: 10px;
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+      background-color: #000000;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 0 #FF0000,
+                   -2px 2px 0 #FF0000,
+                   2px -2px 0 #FF0000,
+                   -2px -2px 0 #FF0000;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     footer {
@@ -211,24 +226,5 @@
   </div>
 </footer>
 
-  <script>
-    function toggleMute(videoId) {
-      const iframe = document.getElementById(pepimp-video-${videoId});
-      const button = document.querySelector(#pepimp-video-${videoId} + .mute-button);
-      const url = new URL(iframe.src);
-
-      // Toggle mute parameter
-      const isMuted = url.searchParams.get('mute') === '1';
-      url.searchParams.set('mute', isMuted ? '0' : '1');
-
-      // Update button text immediately
-      button.textContent = isMuted ? 'Mute Video' : 'Unmute Video';
-
-      // Reload the iframe with updated URL
-      iframe.src = url.toString();
-    }
-  </script>
-
 </body>
-
 </html>
